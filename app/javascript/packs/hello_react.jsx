@@ -11,16 +11,16 @@ const Hello = props => (
 )
 
 Hello.defaultProps = {
-  name: 'David'
+  name: 'Gerardo Ortega'
 }
 
 Hello.propTypes = {
   name: PropTypes.string
 }
 
-document.addEventListener('DOMContentLoaded', () => {
+document.addEventListener('turbolinks:load', () => {
   ReactDOM.render(
-    <Hello name="React" />,
+    <Hello name="Rails" />,
     document.body.appendChild(document.createElement('div')),
   )
 })
